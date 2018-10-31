@@ -1,22 +1,54 @@
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>add2numbers</title>
-<style>
-   input {
-      font-size: large
-} </style>
-</head>
-<body>
-<h1>Tambahkan Dua angka</h1>
-<div class="calc">
-  <input type="text" size="5" placeholder="0" />
-   +
-  <input type="text" size="5" placeholder="0" />
-  <button> = </button>
-  <input type="text" size="5" readonly />
-  <span id="done-message"></span>
-</div>
-<script src="add2numbers.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/images/icon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#005ba8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="/css/add2number.css" />
+    <title>Add 2 Number - Dwi Sulfahnur MWS</title>
+    <title>add2numbers</title>
+  </head>
+  <body>
+
+    <nav>
+      <div class="menu">
+        <a href="/"><img src="/images/home.svg" alt=""/></a>
+        <h2>Mobile Web Specialist</h2>
+      </div>
+    </nav>
+
+
+    <content>
+      <div class="calc">
+        <input type="number" name="number1" value="0">
+
+        <input type="number" name="number1" value="0">
+        <button type="button" name="button"> = </button>
+        <input type="number" name="number1" value="0">
+        <span id="done-message"></span>
+      </div>
+    </content>
+
+
+    <footer class="footer">
+      <span class="text-footer">Dwi Sulfahnur</span>
+    </footer>
+
+    <script src="/js/add2numbers.js"></script>
+    <!-- <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', {scope: '/'})
+      .then(function(reg) {
+        // registration worked
+        console.log('Registration succeeded. Scope is ' + reg.scope);
+      }).catch(function(error) {
+        // registration failed
+        console.log('Registration failed with ' + error);
+      });
+    }
+    </script> -->
+  </body>
 </html>
