@@ -3,33 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/main.css" />
+    <meta name="Description" content="This is a web page for Web Mobile Specialist">
+    <meta name="theme-color" content="#005ba8"/>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="images/icon.ico">
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Dwi Sulfahnur - MWS</title>
   </head>
   <body>
-    <div class="container">
-      <div class="menu">
-        <img src="images/icon.svg" alt=""/>
-        <h2>Mobile Web Specialist</h2>
-      </div>
-      <div class="sidebar">
-        <div class="image-profile">
-          <img src="images/profile-image.jpg"/>
-        </div>
-      </div>
-      <div class="content">
-        <a href="project1/index.html">Menjumlahkan dua angka</a>
-      </div>
-      <div class="content">
-        <a href="project2/index.html">Lokasi Istimewa dengan Mapbox</a>
-      </div>
-      <div class="content">
-        <a href="/project3/index.html">Restaurant Reviews</a>
-      </div>
-      <div class="footer">
-        <div class="text-footer">
-          Dwi Sulfahnur
-        </div>
-      </div>
-    </div>
+    <nav>
+      <a href="/"><img src="images/home.svg" alt="home icon"/></a>
+      <h2>Mobile Web Specialist</h2>
+    </nav>
+    <profile>
+      <img src="images/profile.jpg" alt="dwisulfahnur-mws"/>
+    </profile>
+    <content>
+      <a href="/project1"><h2>Menjumlahkan dua angka</h2></a>
+    </content>
+    <content>
+      <a href="/project2"><h2>Lokasi Istimewa dengan Mapbox</h2></a>
+    </content>
+    <content>
+      <a href="/project3"><h2>Restaurant Reviews</h2></a>
+    </content>
+    <content>
+      <a href="/project4"><h2>Fetch JSON</h2></a>
+    </content>
+    <footer>
+      <span>Dwi Sulfahnur</span>
+    </footer>
+    <script type="text/javascript" src="/js/register_sw.js"></script>
   </body>
 </html>
