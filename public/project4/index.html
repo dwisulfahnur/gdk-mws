@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Fetch JSON</title>
+    <link rel="shortcut icon" href="../images/icon.ico">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div class='menu' role="menu"><img src="../images/home.svg" width="50px"/></div>
+    </header>
+    <map>
+      <div class='peta' id='mapid'> </div>
+    </map>
+    <content>
+      <div class='gambar' id='gmb' ></div>
+      <div class='review' id='review'></div>
+    </content>
+    <footer>
+      <span>&copy Copyright dwisulfahnur 2018</span>
+    </footer>
+  </main>
+
+  <script>
+    var mymap = L.map('mapid').setView([-6.420324, 106.859195], 16);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      // attribution: 'Map data &copy;<a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 20,
+      id: 'mapbox.streets',
+      accessToken:'pk.eyJ1IjoiZHdpc3VsZmFobnVyIiwiYSI6ImNqbTgzeXkxejQ5d2QzcXF2NzBmc2M0ZW8ifQ.iTJd-magwLaFcQKMI6JHVg'
+    }).addTo(mymap);
+  </script>
+  <script src="js/maps.js"></script>
+</body>
+</html>

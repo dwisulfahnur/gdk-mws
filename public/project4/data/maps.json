@@ -1,0 +1,16 @@
+{
+  "places":[
+    {
+    "location": [-6.420324, 106.859195],
+    "sponsor" : "Restaurant Spain",
+    "picture":"data/images/resto_spanyol.jpg",
+    "review": "The best restaurant in Jakarta"
+    },
+    {
+    "location": [-6.423288, 106.856781],
+    "sponsor" : "Coffee Shop",
+    "picture": "data/images/warkop.jpg",
+    "review": "Coffee Shop with the best taste."
+    }
+  ]
+}
